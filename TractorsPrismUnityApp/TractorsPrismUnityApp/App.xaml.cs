@@ -1,4 +1,6 @@
-﻿using Prism.Unity;
+﻿using Microsoft.Practices.Unity;
+using Prism.Unity;
+using TractorsPrismUnityApp.Services;
 using TractorsPrismUnityApp.Views;
 using Xamarin.Forms;
 
@@ -19,6 +21,8 @@ namespace TractorsPrismUnityApp
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
+            //Container.RegisterType
+            Container.RegisterTypeForNavigation<TractorDetailPage>();
         }
     }
 }
